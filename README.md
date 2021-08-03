@@ -1,5 +1,10 @@
 # Portfolio Rebalancing based on Maximum Diversification Portfolio (MDP) Optimization
 
+## Purpose
+* This is an initial commit to test the new 'Streamlit for Teams' service.
+* The files here were produced from an earlier presentation.
+* This is just to test the Streamlit service.
+
 ## Discussion
 * One approach to reduce risk when construcing an investment portfolio \
 is __maximum diversification portfolio optimization__. In particular, this strategy maximizes \
