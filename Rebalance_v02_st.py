@@ -46,6 +46,7 @@ st.sidebar.markdown('## ')
 st.sidebar.markdown('## ')
 
 # Centering logo in the sidebar
+st.sidebar.markdown('Web app developed by [Jimisi Rajasombat](https://www.jimisinith.com)')
 col1, col2, col3 = st.sidebar.beta_columns([3,7,1])
 with col1:
     st.write("")
