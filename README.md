@@ -5,7 +5,7 @@
 * The files here were produced from an earlier presentation.
 * This is just to test the Streamlit service.
 
-## Discussion
+## The App: Portfolio Rebalancing based on MDP
 * One approach to reduce risk when construcing an investment portfolio \
 is __maximum diversification portfolio optimization__. In particular, this strategy maximizes \
 a diversification ratio and does not take into account expected returns.
