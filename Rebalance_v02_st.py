@@ -46,11 +46,11 @@ st.sidebar.markdown('## ')
 st.sidebar.markdown('## ')
 
 # Centering logo in the sidebar
-st.sidebar.markdown('Web app developed by [Jimisi Rajasombat](https://www.jimisinith.com)')
+st.sidebar.markdown('A web app developed by [Jimisi Rajasombat](https://www.jimisinith.com)')
 col1, col2, col3 = st.sidebar.beta_columns([3,7,1])
 with col1:
     st.write("")
 with col2:
-    st.image('j.png', width = 90)
+    st.sidebar.markdown('A web app developed by [st.image('j.png', width = 90)](https://www.jimisinith.com)')
 with col3:
     st.write("")
