@@ -59,7 +59,7 @@ def get_img_with_href(local_img_path, target_url):
     bin_str = get_base64_of_bin_file(local_img_path)
     html_code = f'''
         <a href="{target_url}">
-            <img src="data:image/{img_format};base64,{bin_str}" />
+            <img src="data:image/{img_format};base64,{bin_str}" width = "50" />
         </a>'''
     return html_code
 
@@ -69,6 +69,7 @@ col1, col2, col3 = st.sidebar.beta_columns([3,7,1])
 with col1:
     st.write("")
 with col2:
+    st.markdown('A web app developed by')
     st.markdown(png_html, unsafe_allow_html=True)
 with col3:
     st.write("")
