@@ -74,5 +74,5 @@ png_html = get_img_with_href('j.png', 'https://www.jimisinith.com/about')
 # with col3:
 #     st.write("")
 
-st.markdown('A web app developed by')
-st.markdown(png_html, unsafe_allow_html=True)
+st.sidebar.markdown('A web app developed by')
+st.sidebar.markdown(png_html, unsafe_allow_html=True)
