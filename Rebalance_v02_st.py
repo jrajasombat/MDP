@@ -58,7 +58,7 @@ def get_img_with_href(local_img_path, target_url):
     img_format = os.path.splitext(local_img_path)[-1].replace('.', '')
     bin_str = get_base64_of_bin_file(local_img_path)
     html_code = f'''
-        <a href="{target_url}">
+        <a href="{target_url}" target="_blank">
             <img src="data:image/{img_format};base64,{bin_str}" width = "75" />
         </a>'''
     return html_code
@@ -66,7 +66,7 @@ def get_img_with_href(local_img_path, target_url):
 png_html = get_img_with_href('j.png', 'https://www.jimisinith.com/about')
 
 
-st.sidebar.markdown('## A web app developed by')
+st.sidebar.markdown('A web app developed by')
 col1, col2, col3 = st.sidebar.beta_columns([3,7,1])
 with col1:
     st.markdown(png_html, unsafe_allow_html=True)
