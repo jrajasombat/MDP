@@ -3,22 +3,22 @@
 import rebalancing_functions_st as reb
 import streamlit as st
 
-# Setting the page name and icon
+# Set page title
+st.title('Portfolio Rebalancing based on Maximum Diversification Portfolio Optimization')
+st.markdown('## ')
+
+# Set page name and icon
 st.set_page_config(
     page_title = 'Maximum Diversification',
     page_icon = 'j_fb.png',
 )
 
-st.title('Portfolio Rebalancing based on Maximum Diversification Portfolio Optimization')
-st.markdown('## ')
-
+# Initiate sidebar
 st.sidebar.markdown('## Select Parameters')
 
 # Call the rebalancing functions
 coi = ['Stocks','Bonds','Gold']
 reb.rebalance(coi)
-
-
 
 # Configure sidebar
 st.sidebar.markdown('## ')
@@ -43,7 +43,6 @@ st.sidebar.markdown('## ')
 st.sidebar.markdown('## ')
 st.sidebar.markdown('## ')
 st.sidebar.markdown('## ')
-
 
 # Centering logo in the sidebar
 col1, col2, col3 = st.sidebar.beta_columns([3,7,1])
