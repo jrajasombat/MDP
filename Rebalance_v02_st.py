@@ -3,15 +3,16 @@
 import rebalancing_functions_st as reb
 import streamlit as st
 
-# Set page title
-st.title('Portfolio Rebalancing based on Maximum Diversification Portfolio Optimization')
-st.markdown('## ')
 
 # Set page name and icon
 st.set_page_config(
     page_title = 'Maximum Diversification',
     page_icon = 'j_fb.png',
 )
+
+# Set page title
+st.title('Portfolio Rebalancing based on Maximum Diversification Portfolio Optimization')
+st.markdown('## ')
 
 # Initiate sidebar
 st.sidebar.markdown('## Select Parameters')
