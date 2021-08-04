@@ -2,7 +2,8 @@
 
 import rebalancing_functions_st as reb
 import streamlit as st
-
+import os
+import base64
 
 # Set page name and icon
 st.set_page_config(
@@ -45,12 +46,30 @@ st.sidebar.markdown('## ')
 st.sidebar.markdown('## ')
 st.sidebar.markdown('## ')
 
-# Centering logo in the sidebar
+# Logo in the sidebar
+@st.cache(allow_output_mutation=True)
+def get_base64_of_bin_file(bin_file):
+    with open(bin_file, 'rb') as f:
+        data = f.read()
+    return base64.b64encode(data).decode()
+
+@st.cache(allow_output_mutation=True)
+def get_img_with_href(local_img_path, target_url):
+    img_format = os.path.splitext(local_img_path)[-1].replace('.', '')
+    bin_str = get_base64_of_bin_file(local_img_path)
+    html_code = f'''
+        <a href="{target_url}">
+            <img src="data:image/{img_format};base64,{bin_str}" />
+        </a>'''
+    return html_code
+
+png_html = get_img_with_href('j.png', 'https://www.jimisinith.com/about')
+
 st.sidebar.markdown('A web app developed by [Jimisi Rajasombat](https://www.jimisinith.com)')
 col1, col2, col3 = st.sidebar.beta_columns([3,7,1])
 with col1:
     st.write("")
 with col2:
-    st.sidebar.markdown('A web app developed by [st.image('j.png', width = 90)](https://www.jimisinith.com)')
+    st.markdown(png_html, unsafe_allow_html=True)
 with col3:
     st.write("")
