@@ -65,14 +65,12 @@ def get_img_with_href(local_img_path, target_url):
 
 png_html = get_img_with_href('j.png', 'https://www.jimisinith.com/about')
 
-# col1, col2, col3 = st.sidebar.beta_columns([3,7,1])
-# with col1:
-#     st.write("")
-# with col2:
-#     st.markdown('A web app developed by')
-#     st.markdown(png_html, unsafe_allow_html=True)
-# with col3:
-#     st.write("")
 
-st.sidebar.markdown('A web app developed by')
-st.sidebar.markdown(png_html, unsafe_allow_html=True)
+st.sidebar.markdown('## A web app developed by')
+col1, col2, col3 = st.sidebar.beta_columns([3,7,1])
+with col1:
+    st.markdown(png_html, unsafe_allow_html=True)
+    with col2:
+    st.write("")
+with col3:
+    st.write("")
