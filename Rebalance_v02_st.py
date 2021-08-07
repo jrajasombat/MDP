@@ -39,12 +39,6 @@ st.sidebar.markdown('## Appendix')
 st.sidebar.image('div_ratio.png')
 st.sidebar.markdown('## ')
 st.sidebar.markdown('## ')
-st.sidebar.markdown('## ')
-st.sidebar.markdown('## ')
-st.sidebar.markdown('## ')
-st.sidebar.markdown('## ')
-st.sidebar.markdown('## ')
-st.sidebar.markdown('## ')
 
 # Logo in the sidebar
 @st.cache(allow_output_mutation=True)
