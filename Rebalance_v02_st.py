@@ -8,7 +8,7 @@ import base64
 # Set page name and icon
 st.set_page_config(
     page_title = 'Maximum Diversification',
-    page_icon = 'j_fb.png',
+    page_icon = 'n.png',
 )
 
 # Set page title
@@ -57,7 +57,7 @@ def get_img_with_href(local_img_path, target_url):
         </a>'''
     return html_code
 
-png_html = get_img_with_href('j.png', 'https://www.jimisinith.com/about')
+png_html = get_img_with_href('n.png', 'https://www.jimisinith.com/about')
 
 col1, col2, col3 = st.sidebar.beta_columns([3,7,1])
 with col1:
