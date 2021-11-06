@@ -26,7 +26,7 @@ reb.rebalance(coi)
 st.sidebar.markdown('## ')
 st.sidebar.markdown('## ')
 st.sidebar.markdown('## Discussion')
-st.sidebar.markdown('* One approach to reduce risk when construcing an investment portfolio \
+st.sidebar.markdown('* One approach to reduce risk when constructing an investment portfolio \
 is __maximum diversification portfolio optimization__. In particular, this strategy maximizes \
 a diversification ratio and does not take into account expected returns.')
 st.sidebar.markdown('* The __diversification ratio__ is defined as the ratio of the weighted average \
