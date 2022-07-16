@@ -59,7 +59,7 @@ def get_img_with_href(local_img_path, target_url):
 
 png_html = get_img_with_href('n.png', 'https://www.jimisinith.com/about')
 
-col1, col2, col3 = st.sidebar.beta_columns([3,7,1])
+col1, col2, col3 = st.sidebar.columns([3,7,1])
 with col1:
     st.write("")
 with col2:
