@@ -1,5 +1,5 @@
-streamlit==1.11.0
-scipy==1.5.0
-numpy==1.19.2
+streamlit==1.26.0
+scipy==1.11.2
+numpy==1.25.2
 matplotlib==3.2.2
 seaborn==0.11.0
